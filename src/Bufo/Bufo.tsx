@@ -10,14 +10,17 @@ function Bufos() {
             'url(https://upload.wikimedia.org/wikipedia/commons/a/a3/Bufo-bufo-erdkroete-maennlich.jpg)',
         }}>
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div>
-            <h1 className="text-5xl font-bold">we are the BufoOS</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+          <div className="card lg:card-side bg-base-100 shadow-xl">
+            <figure>
+              <img src="/bufos.webp" alt="Album" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">we are the BufoOS</h2>
+              <p>thank you for visiting</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">Buy us coffee</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
