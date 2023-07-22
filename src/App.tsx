@@ -2,11 +2,13 @@ import React from 'react';
 import './App.css';
 import Footer from './Footer/Footer';
 import Bufos from './Bufo/Bufo';
+import Navbar from './Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <div className="hero min-h-screen bg-base-200">
+      <Navbar />
+      <div className="hero min-h-screen-less-navbar bg-base-200">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Hello there</h1>
@@ -18,6 +20,7 @@ function App() {
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
+        HN
       </div>
 
       <div
