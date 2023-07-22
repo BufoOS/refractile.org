@@ -3,8 +3,17 @@ import './App.css';
 import Footer from './Footer/Footer';
 import Bufos from './Bufo/Bufo';
 import Navbar from './Navbar/Navbar';
+import { ReactComponent as CopyLogo } from './copy.svg';
+import { useState } from 'react';
 
 function App() {
+  const [copied, setCopied] = useState('copy');
+
+  function copyToClipboard() {
+    navigator.clipboard.writeText('npm install refractile -D');
+    setCopied('copied!');
+  }
+
   return (
     <div className="App">
       <Navbar />
@@ -17,10 +26,23 @@ function App() {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
+            <div className="flex justify-around items-center rounded-lg text-slate-200 bg-slate-800 p-5 m-7">
+              <pre>npm install refractile -D</pre>
+              <ul className="menu menu-horizontal ">
+                <li>
+                  <div id="copyTooltip" className="tooltip" data-tip={copied}>
+                    <button
+                      onClick={copyToClipboard}
+                      className="bg-slate-500 p-2 rounded-lg">
+                      <CopyLogo className="h-5 w-5" />
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
-        HN
       </div>
 
       <div
@@ -38,6 +60,7 @@ function App() {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
+
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
