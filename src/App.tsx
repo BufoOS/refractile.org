@@ -12,12 +12,15 @@ function App() {
   function copyToClipboard() {
     navigator.clipboard.writeText('npm install refractile -D');
     setCopied('copied!');
+    setTimeout(() => {
+      setCopied('copy');
+    }, 2000);
   }
 
   return (
     <div className="App">
       <Navbar />
-      <div className="hero min-h-screen-less-navbar bg-base-200">
+      <div className="hero min-h-screen-less-navbar   ">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Hello there</h1>
@@ -26,21 +29,23 @@ function App() {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <div className="flex justify-around items-center rounded-lg text-slate-200 bg-slate-800 p-5 m-7">
-              <pre>npm install refractile -D</pre>
+            <div className="flex justify-around items-center rounded-lg text-white bg-black border-black p-5 m-7 dark:bg-white dark:text-black">
+              <pre>npm install refractile</pre>
               <ul className="menu menu-horizontal ">
                 <li>
                   <div id="copyTooltip" className="tooltip" data-tip={copied}>
                     <button
                       onClick={copyToClipboard}
-                      className="bg-slate-500 p-2 rounded-lg">
-                      <CopyLogo className="h-5 w-5" />
+                      className="bg-white p-2 rounded-lg ">
+                      <CopyLogo className="h-7 w-7" />
                     </button>
                   </div>
                 </li>
               </ul>
             </div>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-background ring-2 ring-brown ring-offset-4 ring-offset-purple-100/[.55]">
+              Get Started
+            </button>
           </div>
         </div>
       </div>
