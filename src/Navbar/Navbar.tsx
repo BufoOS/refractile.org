@@ -1,10 +1,13 @@
+import { ReactComponent as GithubLogo } from './github.svg';
+import { ReactComponent as RefractileLogo } from './prism.svg';
+
 function Navbar() {
   return (
     <div className="Navbar">
-      <div className="navbar bg-base-100">
+      <div className="navbar blue-gradient">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn  lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -41,33 +44,19 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">refractile</a>
+          <a className="btn hidden sm:flex normal-case text-xl">
+            <RefractileLogo className="h-8 w-8 fill-blue" /> refractile
+          </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Demo</a>
-            </li>
-            <li tabIndex={0}>
-              <details>
-                <summary>Docs</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>About us</a>
-            </li>
-          </ul>
+        <div className="navbar-center flex gap-2 hidden lg:flex">
+          <button className="btn">Demo</button>
+          <button className="btn">Docs</button>
+          <button className="btn">About Us</button>
         </div>
         <div className="navbar-end">
-          <a className="btn">github</a>
+          <a href="https://github.com/oslabs-beta/refractile" className="btn">
+            <GithubLogo className="h-8 w-8" /> Github
+          </a>
         </div>
       </div>
     </div>
