@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .min-h-screen-less-navbar {
   min-height: calc(100svh - 4rem);
 }
