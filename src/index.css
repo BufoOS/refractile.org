@@ -65,6 +65,8 @@ a {
 
 #readme {
   text-align: left;
+  margin: auto;
+  width: 90%;
 }
 
 code {
