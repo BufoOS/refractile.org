@@ -23,11 +23,9 @@ function App() {
       <div className="hero min-h-screen-less-navbar   ">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Hello there</h1>
+            <h1 className="text-5xl font-bold">Experience Refractile</h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              Seamlessly integrate the benefits of other languages into a Node Express environment
             </p>
             <div className="flex justify-around items-center rounded-lg text-white bg-black border-black p-5 m-7 dark:bg-white dark:text-black">
               <pre>npm install refractile</pre>
@@ -60,10 +58,8 @@ function App() {
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Refractile</h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            <p className="mb-5 text-xl">
+              Leverage the power of WebAssembly to bring the affordances of many programming languages into your web application's Express backend at near-native speed. Click the button below to learn more.
             </p>
 
             <button className="btn btn-primary">Get Started</button>
