@@ -2,7 +2,7 @@ import React from 'react';
 
 function Bufos() {
   return (
-    <div className="Bufos">
+    <div className="Bufos" id="Bufos">
       <div
         className="hero min-h-screen-less-footer bg-base-200"
         style={{

@@ -29,7 +29,7 @@ function Navbar() {
                 <a>Demo</a>
               </li>
               <li>
-                <a>About Us</a>
+                <a href="#Bufos">About Us</a>
               </li>
             </ul>
           </div>
@@ -39,7 +39,9 @@ function Navbar() {
         </div>
         <div className="navbar-center flex gap-2 hidden lg:flex">
           <button className="btn">Demo</button>
-          <button className="btn">About Us</button>
+          <a type="button" href="#Bufos" className="btn">
+            About Us
+          </a>
         </div>
         <div className="navbar-end">
           <a href="https://github.com/oslabs-beta/refractile" className="btn">
