@@ -1,4 +1,6 @@
 import React from 'react';
+import { ReactComponent as GithubLogo } from './github.svg';
+import { ReactComponent as LinkedinLogo } from './linkedin.svg';
 
 function Bufos() {
   return (
@@ -29,9 +31,27 @@ function Bufos() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Mateo Lopez-Castillo</h2>
-              <p>How to park your car at your garage?</p>
+              <p>
+                Efficiency is my middle name; I get things done in record time.
+              </p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Learn now!</button>
+                <div className="btn-group">
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href = 'https://github.com/mateolopcas')
+                    }>
+                    <GithubLogo className="h-8 w-8" />
+                  </button>{' '}
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href =
+                        'https://www.linkedin.com/in/mateo-lopez-castillo/')
+                    }>
+                    <LinkedinLogo className="h-8 w-8" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -42,9 +62,26 @@ function Bufos() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Ian MacDougald</h2>
-              <p>How to park your car at your garage?</p>
+              <p>I believe in work hard, caffeinate harder.</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Learn now!</button>
+                <div className="btn-group">
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/ianmacdougald')
+                    }>
+                    <GithubLogo className="h-8 w-8" />
+                  </button>{' '}
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href =
+                        'https://www.linkedin.com/in/ian-macdougald/')
+                    }>
+                    <LinkedinLogo className="h-8 w-8" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -55,9 +92,25 @@ function Bufos() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Schuyler Weiner</h2>
-              <p>How to park your car at your garage?</p>
+              <p>They say 'follow your dreams,' so I took the night shift.</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Learn now!</button>
+                <div className="btn-group">
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href = 'https://github.com/Sky-VGW')
+                    }>
+                    <GithubLogo className="h-8 w-8" />
+                  </button>
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href =
+                        'https://www.linkedin.com/in/skyweiner/')
+                    }>
+                    <LinkedinLogo className="h-8 w-8" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -68,9 +121,27 @@ function Bufos() {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Angelo Dell Acqua</h2>
-              <p>How to park your car at your garage?</p>
+              <p>
+                Navigating the corporate maze with a smile and a cup of coffee.
+              </p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Learn now!</button>
+                <div className="btn-group">
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href = 'https://github.com/angedell')
+                    }>
+                    <GithubLogo className="h-8 w-8" />
+                  </button>
+                  <button
+                    className="btn btn-primary"
+                    onClick={() =>
+                      (window.location.href =
+                        'https://www.linkedin.com/in/angelo-dell-acqua/')
+                    }>
+                    <LinkedinLogo className="h-8 w-8" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
