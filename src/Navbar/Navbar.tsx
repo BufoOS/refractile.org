@@ -29,17 +29,6 @@ function Navbar() {
                 <a>Demo</a>
               </li>
               <li>
-                <a>Docs</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
                 <a>About Us</a>
               </li>
             </ul>
@@ -50,7 +39,6 @@ function Navbar() {
         </div>
         <div className="navbar-center flex gap-2 hidden lg:flex">
           <button className="btn">Demo</button>
-          <button className="btn">Docs</button>
           <button className="btn">About Us</button>
         </div>
         <div className="navbar-end">
