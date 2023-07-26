@@ -1,5 +1,6 @@
 import { ReactComponent as GithubLogo } from './github.svg';
 import { ReactComponent as RefractileLogo } from './prism.svg';
+import { ReactComponent as RefractileWord } from './refractile.svg';
 
 function Navbar() {
   return (
@@ -29,29 +30,20 @@ function Navbar() {
                 <a>Demo</a>
               </li>
               <li>
-                <a>Docs</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>About Us</a>
+                <a href="#Bufos">About Us</a>
               </li>
             </ul>
           </div>
-          <a className="btn hidden sm:flex normal-case text-xl">
-            <RefractileLogo className="h-8 w-8 fill-blue" /> refractile
+          <a className="btn hidden sm:flex normal-case text-xl btn-ghost">
+            <RefractileLogo className="h-8 w-8 fill-base-200" />{' '}
+            <RefractileWord className="h-8  fill-base-200" />
           </a>
         </div>
         <div className="navbar-center flex gap-2 hidden lg:flex">
-          <button className="btn">Demo</button>
-          <button className="btn">Docs</button>
-          <button className="btn">About Us</button>
+          <button className="btn  ">Demo</button>
+          <a type="button" href="#Bufos" className="btn">
+            About Us
+          </a>
         </div>
         <div className="navbar-end">
           <a href="https://github.com/oslabs-beta/refractile" className="btn">
