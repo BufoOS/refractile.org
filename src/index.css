@@ -13,54 +13,60 @@
 .blue-gradient {
   background: hsla(211, 50%, 32%, 1);
 
-  background: linear-gradient(
-    225deg,
-    hsla(211, 50%, 32%, 1) 0%,
-    hsla(211, 50%, 27%, 1) 50%,
-    hsla(211, 50%, 32%, 1) 100%
-  );
+  background: linear-gradient(225deg,
+      hsla(211, 50%, 32%, 1) 0%,
+      hsla(211, 50%, 27%, 1) 50%,
+      hsla(211, 50%, 32%, 1) 100%);
 
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(211, 50%, 32%, 1) 0%,
-    hsla(211, 50%, 27%, 1) 50%,
-    hsla(211, 50%, 32%, 1) 100%
-  );
+  background: -moz-linear-gradient(225deg,
+      hsla(211, 50%, 32%, 1) 0%,
+      hsla(211, 50%, 27%, 1) 50%,
+      hsla(211, 50%, 32%, 1) 100%);
 
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(211, 50%, 32%, 1) 0%,
-    hsla(211, 50%, 27%, 1) 50%,
-    hsla(211, 50%, 32%, 1) 100%
-  );
+  background: -webkit-linear-gradient(225deg,
+      hsla(211, 50%, 32%, 1) 0%,
+      hsla(211, 50%, 27%, 1) 50%,
+      hsla(211, 50%, 32%, 1) 100%);
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#29507A", endColorstr="#224366", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#29507A", endColorstr="#224366", GradientType=1);
 }
 
 .white-gradient {
   background: hsla(240, 6%, 91%, 1);
 
-  background: linear-gradient(
-    225deg,
-    hsla(240, 6%, 91%, 1) 24%,
-    hsla(240, 6%, 82%, 1) 100%
-  );
+  background: linear-gradient(225deg,
+      hsla(240, 6%, 91%, 1) 24%,
+      hsla(240, 6%, 82%, 1) 100%);
 
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(240, 6%, 91%, 1) 24%,
-    hsla(240, 6%, 82%, 1) 100%
-  );
+  background: -moz-linear-gradient(225deg,
+      hsla(240, 6%, 91%, 1) 24%,
+      hsla(240, 6%, 82%, 1) 100%);
 
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(240, 6%, 91%, 1) 24%,
-    hsla(240, 6%, 82%, 1) 100%
-  );
+  background: -webkit-linear-gradient(225deg,
+      hsla(240, 6%, 91%, 1) 24%,
+      hsla(240, 6%, 82%, 1) 100%);
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E6E6E9", endColorstr="#CDCDD3", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#E6E6E9", endColorstr="#CDCDD3", GradientType=1);
 }
 
 .colorbtn {
   color: hsl(var(--bc) / var(--tw-text-opacity));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  all: revert;
+}
+
+#readme {
+  text-align: left;
+}
+
+code {
+  font-family: monospace;
 }
