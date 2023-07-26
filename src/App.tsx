@@ -4,7 +4,8 @@ import Footer from './Footer/Footer';
 import Bufos from './Bufo/Bufo';
 import Navbar from './Navbar/Navbar';
 import { ReactComponent as CopyLogo } from './copy.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import PackageReadme from './PackageReadme/PackageReadme';
 
 function App() {
   const [copied, setCopied] = useState('copy');
@@ -66,6 +67,7 @@ function App() {
           </div>
         </div>
       </div>
+      <PackageReadme />
       <Bufos />
       <Footer />
     </div>
