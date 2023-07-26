@@ -1,5 +1,6 @@
 import { ReactComponent as GithubLogo } from './github.svg';
 import { ReactComponent as RefractileLogo } from './prism.svg';
+import { ReactComponent as RefractileWord } from './refractile.svg';
 
 function Navbar() {
   return (
@@ -33,12 +34,13 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn hidden sm:flex normal-case text-xl">
-            <RefractileLogo className="h-8 w-8 fill-blue" /> refractile
+          <a className="btn hidden sm:flex normal-case text-xl btn-ghost">
+            <RefractileLogo className="h-8 w-8 fill-base-200" />{' '}
+            <RefractileWord className="h-8  fill-base-200" />
           </a>
         </div>
         <div className="navbar-center flex gap-2 hidden lg:flex">
-          <button className="btn">Demo</button>
+          <button className="btn  ">Demo</button>
           <a type="button" href="#Bufos" className="btn">
             About Us
           </a>
