@@ -58,12 +58,10 @@ function App() {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Refractile</h1>
+            <h1 className="mb-5 text-5xl font-bold">Unlock Performance</h1>
             <p className="mb-5 text-xl">
-              Leverage the power of WebAssembly to bring the affordances of many programming languages into your web application's Express backend at near-native speed. Click the button below to learn more.
+              Leverage the power of WebAssembly to bring the affordances of many programming languages into your web application's Express backend at near-native speed. Read below to learn more.
             </p>
-
-            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
