@@ -2,9 +2,9 @@
 
 Configuration framework for compiling and coordinating polyglossic middleware in [Express](https://github.com/expressjs/express) using [WebAssembly](https://webassembly.org/).
 
-![NPM Version][npm-version-image]
-![NPM Install Size][npm-install-size-image]
-![NPM Downloads][npm-downloads-image]
+[![NPM Version][npm-version-image]][npm-url]
+[![NPM Install Size][npm-install-size-image]][npm-install-size-url]
+[![NPM Downloads][npm-downloads-image]][npm-downloads-url]
 
 [npm-downloads-image]: https://badgen.net/npm/dm/refractile
 [npm-downloads-url]: https://npmcharts.com/compare/refractile?minimal=true
@@ -21,18 +21,16 @@ Configuration framework for compiling and coordinating polyglossic middleware in
 
 With this package, you gain the ability to refract server-side functionality when using Express through the many prisms of other languages. In other words, when you choose to use Express, which is fast, lightweight, and quick to spin up, you can still make use of the benefit of languages other than JavaScript.
 
-While so much of web development has become monoglossic as JavaScript cotinues its imposing march from the frontend to the backend, with Refractile you can experience a best-of-all-worlds developer experience. You could write functionality that benefits from the speed of C or the affordances of some particular package for Go all while still organizing your server in the lightweight, efficient context of Express JS.
+While so much of web development has become monoglossic as JavaScript continues its imposing march from the frontend to the backend, with Refractile you can experience a best-of-all-worlds developer experience. You could write functionality that benefits from the speed of C or the affordances of some particular package for Go all while still organizing your server in the lightweight, efficient context of Express JS.
 
 ## Installation
 
 Make sure you have [Node.js](https://nodejs.org/en/) installed before you begin.
 
-You can install refractile into your project using [npm](https://www.npmjs.com/).
+You can install refractile into your project using the [npm](https://www.npmjs.com/).
 
 ```console
-
 $ npm install refractile
-
 ```
 
 ## Core Concepts
@@ -44,14 +42,12 @@ The two core concepts to understand when working with this package are its confi
 The interface for `refract` is simple: it takes two arguments — a reference to a module and a function on that module to be invoked. As an exmaple, this would look as follows:
 
 ```js
-
 refract('some_module', 'some_function');
-
 ```
 
 Simple!
 
-`refract` returns an express middleware function, in other words a function that expects a Request object, a Response object, and a Next function. These are the arguments that will be fed into the function requested on the module, which, in the example above, would be `some-function`.
+`refract` returns an express middleware function, in other words a function that expects a Request object, a Response object, and a Next function. These are the arguments that will be fed into the function requested on the module, which, in the example above, would be `some-funciton`.
 
 `refract` works with WebAssembly under the hood; currently, it requires JavaScript glue code to run. In the example above `some_module` would be associated with a file called `some_module.js` that is responsible for instantiating `some_module.wasm`. The point of this package is to organize the compilation of `.wasm` files and, in some cases, `.js` glue code as express middleware.
 
@@ -62,7 +58,6 @@ The function `refract` works with a configuration file called `refractile.config
 The configuration should look as follows:
 
 ```js
-
 module.exports = {
     preload_cmds: [ ] // This is an array of strings representing commands that will run when the configuration is loaded. Use it to create or copy any resources that your modules will depend on
 
@@ -83,7 +78,6 @@ module.exports = {
         some_other_module: { ... }
     }
 };
-
 ```
 
 ## Example
@@ -99,6 +93,7 @@ The app itself benchmarks the performance of a recursive algorithm that calculat
 To run the project, you must have the following dependencies installed:
 
 - [Node.js](https://nodejs.org/en/)
+- [make](https://www.gnu.org/software/make/)
 - [emcc](https://emscripten.org/docs/tools_reference/emcc.html), a compiler front-end developed as part of the [emscripten project](https://emscripten.org/index.html)
 - [go](https://go.dev/doc/install)
 - [tinygo](https://tinygo.org/getting-started/install/)
