@@ -48,7 +48,6 @@ The interface for `refract` is simple: it takes two arguments — a reference to
 refract('some_module', 'some_function');
 
 ```
-<br/>
 
 Simple!
 
