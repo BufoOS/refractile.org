@@ -27,13 +27,11 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/Mateo.png" alt="Mateo" />
+              <img src="/mateo.png" alt="Mateo" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Mateo Lopez-Castillo</h2>
-              <p>
-                Favorite dinosaur: Archaeopteryx
-              </p>
+              <p>Favorite dinosaur: Archaeopteryx</p>
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
@@ -88,7 +86,7 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/sky.PNG" alt="Sky" />
+              <img src="/sky.png" alt="Sky" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Schuyler Weiner</h2>
@@ -117,13 +115,11 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/Angelo.png" alt="Angelo" />
+              <img src="/angelo.png" alt="Angelo" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Angelo Dell Acqua</h2>
-              <p>
-                Favorite dinosaur: Pterodactyl
-              </p>
+              <p>Favorite dinosaur: Pterodactyl</p>
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
