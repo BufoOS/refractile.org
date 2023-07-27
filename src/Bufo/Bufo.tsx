@@ -37,14 +37,14 @@ function Bufos() {
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href = 'https://github.com/mateolopcas')
                     }>
                     <GithubLogo className="h-8 w-8" />
                   </button>{' '}
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href =
                         'https://www.linkedin.com/in/mateo-lopez-castillo/')
@@ -66,7 +66,7 @@ function Bufos() {
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href =
                         'https://github.com/ianmacdougald')
@@ -74,7 +74,7 @@ function Bufos() {
                     <GithubLogo className="h-8 w-8" />
                   </button>{' '}
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href =
                         'https://www.linkedin.com/in/ian-macdougald/')
@@ -96,14 +96,14 @@ function Bufos() {
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href = 'https://github.com/Sky-VGW')
                     }>
                     <GithubLogo className="h-8 w-8" />
                   </button>
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href =
                         'https://www.linkedin.com/in/skyweiner/')
@@ -127,14 +127,14 @@ function Bufos() {
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href = 'https://github.com/angedell')
                     }>
                     <GithubLogo className="h-8 w-8" />
                   </button>
                   <button
-                    className="btn btn-primary"
+                    className="btn blue-gradient"
                     onClick={() =>
                       (window.location.href =
                         'https://www.linkedin.com/in/angelo-dell-acqua/')
