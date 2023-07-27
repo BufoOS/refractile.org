@@ -11,7 +11,7 @@ function Bufos() {
         //   backgroundColor:
         //     'bufoBackground',
         // }}
-        >
+      >
         <div className="hero-content flex-col lg:flex-row-reverse">
           {/* <div className="card lg:card-side glass">
             <figure>
@@ -24,11 +24,11 @@ function Bufos() {
                 <button className="btn btn-primary">Buy us coffee</button>
               </div>
             </div>
-          </div> */}     
+          </div> */}
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/mateo.png" alt="Mateo" />
+              <img src="/mateo.webp" alt="Mateo" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Mateo Lopez-Castillo</h2>
@@ -57,12 +57,12 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/ian.png" alt="Ian" />
+              <img src="/ian.webp" alt="Ian" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Ian MacDougald</h2>
               <p>Favorite dinosaur: Plesiosaurus</p>
-              <br/>
+              <br />
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
@@ -88,7 +88,7 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/sky.png" alt="Sky" />
+              <img src="/sky.webp" alt="Sky" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Schuyler Weiner</h2>
@@ -117,12 +117,12 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/angelo.png" alt="Angelo" />
+              <img src="/angelo.webp" alt="Angelo" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Angelo Dell Acqua</h2>
               <p>Favorite dinosaur: Pterodactyl</p>
-              <br/>
+              <br />
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
