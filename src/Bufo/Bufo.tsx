@@ -6,7 +6,7 @@ function Bufos() {
   return (
     <div className="Bufos" id="Bufos">
       <div
-        className="hero min-h-screen-less-footer bg-[#2c5784]"
+        className="hero min-h-screen-less-footer bg-gradient-to-r from-[#c4c4c4] to-[#1F1F1F]"
         // style={{
         //   backgroundColor:
         //     'bufoBackground',
@@ -24,7 +24,8 @@ function Bufos() {
                 <button className="btn btn-primary">Buy us coffee</button>
               </div>
             </div>
-          </div> */}
+          </div> */}     
+
           <div className="card w-96 bg-base-100">
             <figure>
               <img src="/mateo.png" alt="Mateo" />

@@ -34,10 +34,10 @@ function Navbar() {
               </li>
             </ul>
           </div> */}
-          <a className="btn hidden sm:flex normal-case text-xl btn-ghost">
+          <button className="btn hidden sm:flex normal-case text-xl btn-ghost">
             <RefractileLogo className="h-8 w-8 fill-base-200" />{' '}
             <RefractileWord className="h-8  fill-base-200" />
-          </a>
+          </button>
         </div>
         <div className="navbar-center flex gap-2 hidden lg:flex">
           <a type="button" href="https://github.com/BufoOs/refractile-example" className="btn">
