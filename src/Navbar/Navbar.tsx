@@ -9,7 +9,7 @@ function Navbar() {
     <div className="Navbar">
       <div className="navbar blue-gradient">
         <div className="navbar-start">
-          <a className="btn hidden sm:flex normal-case text-xl btn-ghost">
+          <a className="btn  sm:flex normal-case text-xl btn-ghost">
             <RefractileLogo className="h-8 w-8 fill-white" />{' '}
             <RefractileWord className="h-8  fill-base-200" />
           </a>
@@ -31,7 +31,7 @@ function Navbar() {
           </a>
           <a type="button" href="#Bufos" className="btn">
             <Toad className="h-8 w-8  dark:fill-white fill-black" />
-            About Us
+            about us
           </a>
         </div>
         <div className="navbar-end">

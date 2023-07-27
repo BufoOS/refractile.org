@@ -8,6 +8,10 @@ import { useState, useEffect } from 'react';
 import PackageReadme from './PackageReadme/PackageReadme';
 import waves from 'vanta/dist/vanta.waves.min.js';
 
+import { ReactComponent as RefractileLogo } from './Navbar/prism.svg';
+import { ReactComponent as Newspaper } from './Navbar/newspaper.svg';
+import { ReactComponent as Toad } from './Footer/BufoOs.svg';
+
 function App() {
   const [copied, setCopied] = useState('copy');
 
@@ -40,13 +44,34 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="hero min-h-screen" id="vanta" >
-  
-        <div className="hero-overlay"></div>
+
+      <div className="hero min-h-screen">
+        <div className="hero-overlay" id="vanta"></div>
+
         <div className="card w-100 glass">
           <div className="hero-content text-center text-black">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Experience Refractile</h1>
+              <div className="py-6 flex flex-col gap-1 sm:hidden">
+                <a
+                  type="button"
+                  href="https://github.com/BufoOs/refractile-example"
+                  className="btn">
+                  <RefractileLogo className="h-8 w-8 dark:fill-white fill-black" />
+                  Demo
+                </a>
+                <a
+                  type="button"
+                  href="https://medium.com/@ian_30459/refractile-6473eab7b891"
+                  className="btn">
+                  <Newspaper className="h-8 w-8 fill-foreground" />
+                  Medium
+                </a>
+                <a type="button" href="#Bufos" className="btn">
+                  <Toad className="h-8 w-8  dark:fill-white fill-black" />
+                  about us
+                </a>
+              </div>
               <p className="py-6">
                 Seamlessly integrate the capabilities of other programming
                 languages into a Node Express environment
@@ -68,16 +93,15 @@ function App() {
               <button
                 className="btn btn-background ring-2 ring-brown ring-offset-4 ring-offset-purple-100/[.55"
                 onClick={() => {
-                  console.log(document.querySelector("#readme"));
+                  console.log(document.querySelector('#readme'));
                   window.location.href = '#readme';
-                  }}>
+                }}>
                 Read More
               </button>
             </div>
           </div>
         </div>
       </div>
-
       <PackageReadme />
       <Bufos />
       <Footer />
