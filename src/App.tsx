@@ -68,7 +68,7 @@ function App() {
         </div>
       </div> */}
 
-      <div className="hero min-h-screen" id="vanta">
+      <div className="hero min-h-screen -z-[1]" id="vanta">
         <div className="hero-overlay"></div>
         <div className="card w-100 glass">
           <div className="hero-content text-center text-black">
