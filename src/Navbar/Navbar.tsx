@@ -4,10 +4,10 @@ import { ReactComponent as RefractileWord } from './refractile.svg';
 
 function Navbar() {
   return (
-    <div className="Navbar">
+    <div className="Navbar z-8">
       <div className="navbar blue-gradient">
         <div className="navbar-start">
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <label tabIndex={0} className="btn  lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ function Navbar() {
                 <a href="#Bufos">About Us</a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <a className="btn hidden sm:flex normal-case text-xl btn-ghost">
             <RefractileLogo className="h-8 w-8 fill-base-200" />{' '}
             <RefractileWord className="h-8  fill-base-200" />
