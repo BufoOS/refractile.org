@@ -19,6 +19,10 @@ module.exports = {
           dark: '#1F1F1F',
           light: '#e6e6e9',
         },
+        bufobackground: {
+          dark: '#2c5784',
+          light: '#76767f',
+        },
       },
     },
   },
