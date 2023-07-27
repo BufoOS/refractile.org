@@ -27,7 +27,7 @@ function Navbar() {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li>
-                <a>Demo</a>
+                <a href="https://github.com/BufoOs/refractile-example">Demo</a>
               </li>
               <li>
                 <a href="#Bufos">About Us</a>
@@ -40,7 +40,9 @@ function Navbar() {
           </a>
         </div>
         <div className="navbar-center flex gap-2 hidden lg:flex">
-          <button className="btn  ">Demo</button>
+          <a type="button" href="https://github.com/BufoOs/refractile-example" className="btn">
+            Demo
+          </a>
           <a type="button" href="#Bufos" className="btn">
             About Us
           </a>
