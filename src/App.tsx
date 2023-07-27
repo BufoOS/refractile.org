@@ -48,7 +48,7 @@ function App() {
       <div className="hero min-h-screen">
         <div className="hero-overlay" id="vanta"></div>
 
-        <div className="card w-100 glass">
+        <div className="card w-90 glass">
           <div className="hero-content text-center text-black">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Experience Refractile</h1>
