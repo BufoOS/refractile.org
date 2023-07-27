@@ -4,11 +4,30 @@ import Footer from './Footer/Footer';
 import Bufos from './Bufo/Bufo';
 import Navbar from './Navbar/Navbar';
 import { ReactComponent as CopyLogo } from './copy.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PackageReadme from './PackageReadme/PackageReadme';
+import waves from 'vanta/dist/vanta.waves.min.js';
 
 function App() {
   const [copied, setCopied] = useState('copy');
+
+  useEffect(() => {
+    waves({
+      el: '#vanta',
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x29507a,
+      shininess: 88.0,
+      waveHeight: 31.5,
+      waveSpeed: 0.75,
+      zoom: 1.75,
+    });
+  }, []);
 
   function copyToClipboard() {
     navigator.clipboard.writeText('npm install refractile -D');
@@ -49,13 +68,8 @@ function App() {
         </div>
       </div> */}
 
-      <div
-        className="hero min-h-screen"
-        style={{
-          backgroundImage:
-            'url(https://upload.wikimedia.org/wikipedia/commons/7/71/GGB_reflection_in_raindrops.jpg)',
-        }}>
-        <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero min-h-screen" id="vanta">
+        <div className="hero-overlay"></div>
         <div className="card w-100 glass">
           <div className="hero-content text-center text-black">
             <div className="max-w-md">
