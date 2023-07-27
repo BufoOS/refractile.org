@@ -1,5 +1,7 @@
+import './prism.css';
 import React, { useState, useEffect } from 'react';
-import Markdown from 'markdown-to-jsx';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import Prism from 'prismjs';
 const README = require('../refractile/README.md');
 
@@ -8,6 +10,9 @@ function PackageReadme(props: any) {
 
   useEffect(() => {
     fetchMarkdown();
+    if (typeof window !== 'undefined') {
+      Prism.highlightAll();
+    }
   }, []);
 
   async function fetchMarkdown() {
@@ -18,7 +23,8 @@ function PackageReadme(props: any) {
 
   return (
     <div id="readme">
-      <Markdown children={mdText} options={{}} />
+      <ReactMarkdown children={mdText} remarkPlugins={[remarkGfm]} />
+      <div className="divider"></div>
     </div>
   );
 }
