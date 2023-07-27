@@ -117,7 +117,7 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/angelo.webp" alt="Angelo" />
+              <img src="/angelo.png" alt="Angelo" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Angelo Dell Acqua</h2>
