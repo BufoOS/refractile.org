@@ -2,6 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{html,js,ts,tsx}'],
   theme: {
+    colors: {
+      iconcol: {
+        light: '#1F1F1F',
+        dark: '#e6e6e9',
+      },
+    },
     extend: {
       colors: {
         transparent: 'transparent',
