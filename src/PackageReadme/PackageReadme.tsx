@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const README = require('./README.md')
+// const README = require('./README.md')
 
 function PackageReadme(props: any) {
   const [mdText, setMdText] = useState('');
@@ -14,9 +14,15 @@ function PackageReadme(props: any) {
   }, []);
 
   async function fetchMarkdown() {
-    const response = await fetch(README);
-    const data = await response.text();
-    setMdText(data);
+    try {
+      const response = await fetch(
+        'https://raw.githubusercontent.com/oslabs-beta/refractile/main/README.md'
+      );
+      const data = await response.text();
+      setMdText(data);
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   return (
