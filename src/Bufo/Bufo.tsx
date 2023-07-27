@@ -28,7 +28,7 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/mateo.webp" alt="Mateo" />
+              <img src="/mateo.png" alt="Mateo" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Mateo Lopez-Castillo</h2>
@@ -57,7 +57,7 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/ian.webp" alt="Ian" />
+              <img src="/ian.png" alt="Ian" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Ian MacDougald</h2>
@@ -88,7 +88,7 @@ function Bufos() {
 
           <div className="card w-96 bg-base-100">
             <figure>
-              <img src="/sky.webp" alt="Sky" />
+              <img src="/sky.png" alt="Sky" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Schuyler Weiner</h2>
