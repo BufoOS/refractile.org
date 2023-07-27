@@ -1,8 +1,9 @@
-import './prism.css';
+import remarkGfm from 'remark-gfm';
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import Prism from 'prismjs';
+import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 const README = require('../refractile/README.md');
 
 function PackageReadme(props: any) {
@@ -10,9 +11,6 @@ function PackageReadme(props: any) {
 
   useEffect(() => {
     fetchMarkdown();
-    if (typeof window !== 'undefined') {
-      Prism.highlightAll();
-    }
   }, []);
 
   async function fetchMarkdown() {
@@ -23,7 +21,29 @@ function PackageReadme(props: any) {
 
   return (
     <div id="readme">
-      <ReactMarkdown children={mdText} remarkPlugins={[remarkGfm]} />
+      <ReactMarkdown
+        children={mdText}
+        remarkPlugins={[remarkGfm]}
+        components={{
+          code({ node, inline, className, children, ...props }) {
+            const match = /language-(\w+)/.exec(className || '');
+            return !inline && match ? (
+              <SyntaxHighlighter
+                {...props}
+                children={String(children).replace(/\n$/, '')}
+                wrapLines={true}
+                style={duotoneDark}
+                language={match[1]}
+                PreTag="div"
+              />
+            ) : (
+              <code {...props} className={className}>
+                {children}
+              </code>
+            );
+          },
+        }}
+      />
       <div className="divider"></div>
     </div>
   );
