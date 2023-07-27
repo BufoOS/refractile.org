@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const README = require('../refractile/README.md');
+const README = require('./README.md')
 
 function PackageReadme(props: any) {
   const [mdText, setMdText] = useState('');
