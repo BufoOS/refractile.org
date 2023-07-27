@@ -6,11 +6,12 @@ function Bufos() {
   return (
     <div className="Bufos" id="Bufos">
       <div
-        className="hero min-h-screen-less-footer bg-base-200"
-        style={{
-          backgroundImage:
-            'url(https://upload.wikimedia.org/wikipedia/commons/a/a3/Bufo-bufo-erdkroete-maennlich.jpg)',
-        }}>
+        className="hero min-h-screen-less-footer bg-[#2c5784]"
+        // style={{
+        //   backgroundColor:
+        //     'bufoBackground',
+        // }}
+        >
         <div className="hero-content flex-col lg:flex-row-reverse">
           {/* <div className="card lg:card-side glass">
             <figure>
@@ -24,7 +25,6 @@ function Bufos() {
               </div>
             </div>
           </div> */}
-
           <div className="card w-96 bg-base-100">
             <figure>
               <img src="/mateo.png" alt="Mateo" />
@@ -61,6 +61,7 @@ function Bufos() {
             <div className="card-body">
               <h2 className="card-title">Ian MacDougald</h2>
               <p>Favorite dinosaur: Plesiosaurus</p>
+              <br/>
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
@@ -120,6 +121,7 @@ function Bufos() {
             <div className="card-body">
               <h2 className="card-title">Angelo Dell Acqua</h2>
               <p>Favorite dinosaur: Pterodactyl</p>
+              <br/>
               <div className="card-actions justify-end">
                 <div className="btn-group">
                   <button
