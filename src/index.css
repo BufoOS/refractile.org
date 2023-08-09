@@ -89,4 +89,21 @@ code {
   font-family: monospace;
 }
 
+#readme div p {
+  margin-bottom: -0.5em;
+}
 
+#readme div h1,
+h2,
+h3 {
+  margin-bottom: -0.5em;
+}
+
+#readme div ul {
+  margin-bottom: -1em;
+  margin-top: -2em;
+}
+
+#readme div ul li {
+  margin-bottom: -1em;
+}

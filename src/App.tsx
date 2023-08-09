@@ -46,11 +46,12 @@ function App() {
       <Navbar />
       <div className="hero min-h-screen">
         <div className="hero-overlay" id="vanta"></div>
-        <div className="card w-100 glass">
+
+        <div className="card w-85 glass">
           <div className="hero-content text-center text-black">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Experience Refractile</h1>
-              <div className="py-6 flex flex-col gap-1 sm:hidden">
+              <div className="py-4 flex justify-evenly flex-row gap-1 sm:hidden">
                 <a
                   type="button"
                   href="https://github.com/BufoOs/refractile-example"
