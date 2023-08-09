@@ -28,6 +28,7 @@ function PackageReadme(props: any) {
   return (
     <div id="readme">
       <ReactMarkdown
+        className="whitespace-pre-wrap"
         children={mdText}
         remarkPlugins={[remarkGfm]}
         components={{
