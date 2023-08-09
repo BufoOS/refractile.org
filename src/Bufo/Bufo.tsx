@@ -13,13 +13,13 @@ function BufoCard({
   liLink,
 }: bufoCardProp): JSX.Element {
   return (
-    <div className="card w-96 bg-base-100">
+    <div className="card w-72 bg-base-100">
       <figure>
-        <img src={imgSrc} alt={imgAlt} />
+        <img className="h-72" src={imgSrc} alt={imgAlt} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{bufoName}</h2>
-        <p>Favorite dinosaur: {dinoName}</p>
+        <p className="whitespace-nowrap">Favorite dinosaur: {dinoName}</p>
         <div className="card-actions justify-end">
           <div className="btn-group">
             <button
