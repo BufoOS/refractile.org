@@ -5,7 +5,7 @@ import Bufos from './Bufo/Bufo';
 import Navbar from './Navbar/Navbar';
 import { ReactComponent as CopyLogo } from './copy.svg';
 import { useState, useEffect } from 'react';
-import PackageReadme from './PackageReadme/PackageReadme';
+import Readme from './Readme/Readme';
 import waves from 'vanta/dist/vanta.waves.min.js';
 
 import { ReactComponent as RefractileLogo } from './Navbar/prism.svg';
@@ -44,7 +44,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
       <div className="hero min-h-screen">
         <div className="hero-overlay" id="vanta"></div>
 
@@ -56,14 +55,16 @@ function App() {
                 <a
                   type="button"
                   href="https://github.com/BufoOs/refractile-example"
-                  className="btn">
+                  className="btn"
+                >
                   <RefractileLogo className="h-8 w-8 dark:fill-white fill-black" />
                   Demo
                 </a>
                 <a
                   type="button"
                   href="https://medium.com/@ian_30459/refractile-6473eab7b891"
-                  className="btn">
+                  className="btn"
+                >
                   <Newspaper className="h-8 w-8 fill-foreground" />
                   Medium
                 </a>
@@ -83,7 +84,8 @@ function App() {
                     <div id="copyTooltip" className="tooltip" data-tip={copied}>
                       <button
                         onClick={copyToClipboard}
-                        className="bg-white p-2 rounded-lg ">
+                        className="bg-white p-2 rounded-lg "
+                      >
                         <CopyLogo className="h-7 w-7" />
                       </button>
                     </div>
@@ -95,14 +97,15 @@ function App() {
                 onClick={() => {
                   console.log(document.querySelector('#readme'));
                   window.location.href = '#readme';
-                }}>
+                }}
+              >
                 Read More
               </button>
             </div>
           </div>
         </div>
       </div>
-      <PackageReadme />
+      <Readme />
       <Bufos />
       <Footer />
     </div>
