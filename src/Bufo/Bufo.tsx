@@ -18,7 +18,8 @@ function BufoCard({
         <img className="h-72" src={imgSrc} alt={imgAlt} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{bufoName}</h2>
+        <h2 className="card-title -mb-1">{bufoName}</h2>
+        <hr />
         <p className="whitespace-nowrap">Favorite dinosaur: {dinoName}</p>
         <div className="card-actions justify-end">
           <div className="btn-group">
