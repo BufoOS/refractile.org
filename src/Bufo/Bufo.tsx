@@ -47,8 +47,8 @@ function Bufos() {
     <div className="Bufos" id="Bufos">
       <div className="hero min-h-screen-less-footer bg-gradient-to-r from-[#c4c4c4] to-[#1F1F1F]">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          {bufos.map((bufo: bufoCardProp) => (
-            <BufoCard {...bufo} />
+          {bufos.map((bufo: bufoCardProp, index) => (
+            <BufoCard {...bufo} key={`contributor-no-${index}`} />
           ))}
         </div>
       </div>
