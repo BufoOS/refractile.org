@@ -90,13 +90,13 @@ code {
 }
 
 #readme div p {
-  margin-bottom: -0.5em;
+  margin-bottom: -1em;
 }
 
 #readme div h1,
 h2,
 h3 {
-  margin-bottom: -0.5em;
+  margin-bottom: -1em;
 }
 
 #readme div ul {
